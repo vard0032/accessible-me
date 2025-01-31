@@ -1,17 +1,11 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
-  margin: 0;
-  padding: 0;
+  background-color: rgb(242, 240, 240);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  color: black;
 }
 
 .container {
@@ -38,10 +32,34 @@ img {
 }
 
 .main-nav ul li a {
+  background-color: rgb(120, 120, 200);
   display: block;
-  color: inherit;
+  color: black;
   text-decoration: none;
   font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.main-nav ul li a:hover, .main-nav ul li a:focus {
+  background-color: darkred;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: white;
+  color: black;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+.skip-link:focus {
+  top: 10px;
 }
 
 form input,
@@ -50,6 +68,7 @@ form textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  border: 1px solid black;
 }
 
 form textarea {
@@ -60,12 +79,31 @@ form textarea {
 }
 
 form button {
-  background: none;
+  background: rgb(120, 120, 200);
+  color: black;
   border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+form button:hover, form button:focus {
+  background: darkred;
+  border-color: darkred;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
 }
 
 .site-footer {
   padding: 2rem 0;
+  text-align: center;
+  background-color: rgb(120, 120, 200);
+  margin-top: 2rem;
+}
+
+.owner a:hover, .owner a:focus {
+  text-decoration-color: darkred;
+  color: darkred;
+  font-weight: bold;
 }
